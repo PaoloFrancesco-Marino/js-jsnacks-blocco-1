@@ -102,11 +102,31 @@
  * Prova prima senza funzione e poi con funzione.
  *********************************************************************/
 
- var numInt = [1, 4, 2, 15, 120, 17, 3];
+ var numbers = [1, 4, 2, 15, 120, 17, 3];
+ console.log(numbers);
+ 
+ var somma = 0;
 
- for (var i = 0; i < numInt.length; i++) {
-     var item = numInt[i];
-     console.log(item);
+
+ for (var numbersIndex = 0; numbersIndex < numbers.length -1; numbersIndex++) {
+
+     if (numbersIndex % 2 !== 0) {
+        console.log('numeri in posizione dispari: ', numbers[numbersIndex]);
+        somma += numbers[numbersIndex];
+        
+        
+     } else {
+         console.log('numeri in posizione pari: ', numbers[numbersIndex]);
+
+     }
           
- }
+ } 
+
+ console.log('la somma totale dei numeri in posizione dispari è: ', somma);
+ 
+
+ 
+
+
+
 
