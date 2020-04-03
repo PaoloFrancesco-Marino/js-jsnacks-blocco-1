@@ -4,8 +4,8 @@
  * Utilizza una funzione per determinare e ritornare la parola più lunga.
  **************************************************************************/
 
-//  var parola1 = prompt('inserisci parola 1');
-//  var parola2 = prompt('inserisci parola 2');
+//  var parola1 = prompt('inserisci parola 1').trim();
+//  var parola2 = prompt('inserisci parola 2').trim();
 
 //  console.log(parola1);
 //  console.log(parola2);
@@ -111,12 +111,12 @@
  for (var numbersIndex = 0; numbersIndex < numbers.length -1; numbersIndex++) {
 
      if (numbersIndex % 2 !== 0) {
-        console.log('numeri in posizione dispari: ', numbers[numbersIndex]);
+        console.log('numeri in posizione dispari: ', parseInt(numbers[numbersIndex]));
         somma += numbers[numbersIndex];
         
         
      } else {
-         console.log('numeri in posizione pari: ', numbers[numbersIndex]);
+         console.log('numeri in posizione pari: ', parseInt(numbers[numbersIndex]));
 
      }
           
@@ -126,7 +126,3 @@
  
 
  
-
-
-
-
