@@ -108,18 +108,17 @@
  var somma = 0;
 
 
- for (var numbersIndex = 0; numbersIndex < numbers.length -1; numbersIndex++) {
+ for (var i = 0; i < numbers.length; i++) {
 
-     if (numbersIndex % 2 !== 0) {
-        console.log('numeri in posizione dispari: ', parseInt(numbers[numbersIndex]));
-        somma += numbers[numbersIndex];
+     if (i % 2 != 0) {
+        console.log('numeri in posizione dispari: ', parseInt(numbers[i]));
+        somma += numbers[i];
         
         
      } else {
-         console.log('numeri in posizione pari: ', parseInt(numbers[numbersIndex]));
+         console.log('numeri in posizione pari: ', parseInt(numbers[i]));
 
-     }
-          
+     }      
  } 
 
  console.log('la somma totale dei numeri in posizione dispari è: ', somma);
